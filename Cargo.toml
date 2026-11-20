@@ -1,0 +1,19 @@
+[package]
+name = "mini_jeu_serveur"
+version = "0.1.0"
+edition = "2021"
+description = "Carrés partagés en réseau : un serveur TCP et un client Piston"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[dependencies]
+piston = "1.0.0"
+piston2d-graphics = "0.45.0"
+pistoncore-glutin_window = "0.73.1"
+piston2d-opengl_graphics = "0.89.0"
